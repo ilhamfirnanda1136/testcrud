@@ -1,0 +1,2 @@
+<button data-id="{{$model->id}}" data-nama="{{$model->nama}}" class="btn-edit btn btn-sm btn-warning"><i class="fa fa-pencil-alt"></i> Ubah</button>
+<button data-id="{{$model->id}}" class="btn-danger btn btn-sm btn-delete"><i class="fa fa-trash"></i> Hapus</button>

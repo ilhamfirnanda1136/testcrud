@@ -1,0 +1,1867 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <meta name="author" content="BAZNAS">
+  <meta name="author" content="root" />
+  <meta name="google-site-verification" content="XrjChdZLXfgJozLAUbTFz54Z6ZJxou0VA6UcztkdakI" />
+
+  <meta property="og:image" content='https://baznas.go.id/assets/images/baznas_logo_putih.jpg'/>
+
+  <meta name="facebook-domain-verification" content="01q04p3gc8h6g56guhxw5k5bykb4uo" /> <!-- tiket id 3055 25/10/2021 -->
+
+  <script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
+
+    
+  <meta property="og:title" content="BAZNAS: Badan Amil Zakat Nasional"/>
+  <meta property="og:description" content="BAZNAS adalah lembaga pemerintah non struktural yang menerima dan menyalurkan zakat & infak dari muzaki untuk mustahik yang membutuhkan."/>
+  <meta name="title" content="BAZNAS: Badan Amil Zakat Nasional" />
+  <meta name="description" content="BAZNAS adalah lembaga pemerintah non struktural yang menerima dan menyalurkan zakat & infak dari muzaki untuk mustahik yang membutuhkan." />
+  <meta name="keywords" content="zakat,infak,sedekah,donasi,muzaki,mustahik,baznas,kurban,qurban,Bayar Zakat Online,zakat online,zakat online baznas,zakat pendapatan online,zakat penghasilan online,zakat fitrah online,zakat harta online,zakat maal online,bayar zakat mal,zakat mal" />
+
+  <title> BAZNAS </title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://baznas.go.id/public/dist/css/app.min.c6441d44710f13a8bf4dd3d87821b6b4.css">
+  <link rel="stylesheet" href="">
+  <link rel="shortcut icon" href="https://baznas.go.id/assets/Icon/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="https://baznas.go.id/assets/Icon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <script type="text/javascript" src="https://baznas.go.id/public/dist/js/app.min.33a487885e53d235ac0a.js"></script>
+  <script src=""></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6088fa2c913d1100118a856f&product=inline-share-buttons" async="async"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-777219646"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-777219646'); </script>
+
+  <script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-777219646/v17JCOCerpgBEL7czfIC', 'event_callback': callback }); return false; } </script>
+
+  <link href="https://baznas.go.id/assets/flag-icons/css/flag-icon.css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+  <script src="https://lipis.github.io/bootstrap-sweetalert/dist/sweetalert.js"></script>
+  <link rel="stylesheet" href="https://lipis.github.io/bootstrap-sweetalert/dist/sweetalert.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+
+  <style type="text/css">
+    a:hover {
+      color: #005331;
+    }
+    .box-lang {
+      border: 1px solid #ccc;
+      background: white;
+      padding: 5px;
+      list-style: none;
+      position: absolute;
+      top: 0;
+    }
+    .box-lang li {
+      margin-bottom: 2px;
+    }
+    ul.pagination li a {
+      color:  #005331;
+    }
+    ul.pagination li a.active {
+      background-color: #005331;
+      color:  #fff;
+    }
+    @media screen and (min-width: 1250px) {
+  #back-to-top2 {
+    right: 19.45rem;
+  }
+}
+  </style>
+  <script type="text/javascript">
+    $(window).click(function(e){
+      // console.log(e.target.getAttribute('class'))
+      if(e.target.getAttribute('class') == 'sidebar' || e.target.getAttribute('class') == 'fas fa-angle-left right' || e.target.getAttribute('class') == 'nav-link' || e.target.getAttribute('class') == 'text-uppercase font-weight-bold' || e.target.getAttribute('class') == 'tree' || e.target.getAttribute('class') == 'nav-link tree' || e.target.getAttribute('class') == 'nav nav-treeview pl-4'){
+        
+        $("body").addClass('control-sidebar-slide-open');
+      }else{
+        $("body").removeClass('control-sidebar-slide-open');
+      }
+      
+    })
+
+    window.__lc = window.__lc || {};
+    window.__lc.license = 7527371;
+    (function() {
+      if ($(window).width() >= 994){
+        var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+        lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+      }
+      
+    })();
+  </script>
+
+    <!-- Facebook Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+
+   fbq('init', '278249982706813'); 
+   fbq('track', 'PageView');
+  </script>
+
+  <noscript>
+   <img height="1" width="1" 
+  src="https://www.facebook.com/tr?id=278249982706813&ev=PageView
+  &noscript=1"/>
+  </noscript>
+
+  <!-- End Facebook Pixel Code -->
+  <!-- Google Tag Manager Old-->
+  <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TV5QRLS');</script> -->
+  <!-- End Google Tag Manager -->
+
+  <!-- Google Tag Manager -->
+  <script nonce='{SERVER-GENERATED-NONCE}'>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;var n=d.querySelector('[nonce]');
+  n&&j.setAttribute('nonce',n.nonce||n.getAttribute('nonce'));f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TV5QRLS');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N7ZEQVBHGZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N7ZEQVBHGZ');
+</script>
+
+  <!-- TikTok -->
+  <script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+
+  ttq.load('CGIIRRRC77U1JI9QID2G');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+  <!-- End TikTok -->
+
+  <!-- meta tag twitter -->
+  <meta expr:content='data:blog.title' name='twitter:site'/>
+      <b:if cond='data:blog.url == data:blog.homepageUrl'>
+      <meta expr:content='data:blog.title' name='twitter:title'/>
+      <b:if cond='data:blog.metaDescription'>
+      <meta expr:content='data:blog.metaDescription' property='og:description'/>
+      </b:if>
+      </b:if>
+      <b:if cond='data:blog.pageType == &quot;item&quot;'>
+      <meta expr:content='data:blog.pageName' name='twitter:title'/>
+      <b:if cond='data:blog.metaDescription'>
+      <meta expr:content='data:blog.metaDescription' name='twitter:description'/>
+      </b:if>
+      </b:if>
+      <b:if cond='data:blog.postImageUrl'>
+      <meta expr:content='data:blog.postImageUrl' name='twitter:image:src'/>
+      <b:else/>
+      <b:if cond='data:blog.postImageThumbnailUrl'>
+      <meta expr:content='data:blog.postThumbnailUrl' name='twitter:image:src'/>
+      <b:else/>
+      <meta content='https://baznas.go.id' name='twitter:image:src'/>
+      </b:if>
+      </b:if>
+      <b:if cond='data:post.firstImageUrl'>
+         <meta content='summary_large_image' name='twitter:card'/>
+         <meta expr:content='data:post.firstImageUrl' name='twitter:image'/>
+      <b:else/>
+         <meta content='summary' name='twitter:card'/>
+         <b:if cond='data:blog.postImageThumbnailUrl'>
+            <meta expr:content='data:blog.postImageThumbnailUrl' name='twitter:image'/>
+         </b:if>
+      </b:if>
+  <meta content='@baznasindonesia' name='twitter:site'/>
+  <meta content='@baznasindonesia' name='twitter:creator'/>
+  <meta expr:content='data:blog.homepageUrl' name='twitter:domain'/>
+  <meta expr:content='data:blog.canonicalUrl' name='twitter:url'/>
+
+  <meta name="google-site-verification" content="f_ml1T1jnvW2K8P49PRrzghwLHmSWKakaR9vean1gCU" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+</head>
+
+<body class="hold-transition" id="control_sidebar">
+  <div class="wrapper">
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light d-none d-sm-block bg-main" style="height: 6px;">
+  <!-- Right navbar links -->
+  <div class="navbar-nav w-100">
+    <!-- <form class="form-inline">
+      <div class="input-group input-group-sm w-100 middle" style="max-width: 420px;">
+        <div class="input-group-append">
+          <button class="btn btn-navbar bg-transparent border-0" type="submit">
+            <i class="fas fa-search text-white"></i>
+          </button>
+        </div>
+        <input class="form-control form-control-navbar rounded-pill" type="search" id="top-search" name="search" style="background-color: #4e886f; border-color: #4e886f;" placeholder="Pencarian berita">
+      </div>
+    </form> -->
+  </div>
+</nav>
+
+    <div class="mobile">
+      <!-- Navbar -->
+      <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="height: 100px;">
+  <!-- Left navbar links -->
+  <ul class="navbar-nav">
+    <!-- <li class="nav-item">
+      <a href="https://baznas.go.id/muzaki/login" title="Muzaki" style="border:1px solid #ccc;padding:4px 5px;display: inline-block;margin-right: 3px;"><i class="fa fa-user-friends"></i></a>
+    </li>
+    <li class="nav-item" style="position: relative;">
+      <a href="#" style="border:1px solid #ccc;padding:4px 5px;display: inline-block;margin-right: 3px;" id="currLang"><span class="flag-icon flag-icon-idn"></span></a>
+        <ul class="box-lang">
+          <li><a href="" class="itemLang"><span class="flag-icon flag-icon-idn"></span></a></li>
+          <li><a href="" class="itemLang"><span class="flag-icon flag-icon-gbr"></span></a></li>
+          <li><a href="" class="itemLang"><span class="flag-icon flag-icon-sau"></span></a></li>
+        </ul>
+    </li> -->
+    
+  </ul>
+
+  <div class="middle">
+    <a href="https://baznas.go.id/">
+      <img src="https://baznas.go.id/assets/images/logo_baznas_mobile.png" alt="AdminLTE Logo" class="brand-image" style="max-height: 80px;">
+    </a>
+  </div>
+
+  <!-- Right navbar links -->
+  <ul class="navbar-nav ml-auto">
+    <!-- <li class="nav-item">
+      <form class="form-inline ml-3 d-block d-sm-none" style="margin-top:6px;">
+        <div class="input-group input-group-sm">
+          <input class="form-control form-control-navbar" type="search" id="search" name="search" placeholder="Search" aria-label="Search" style="display: none;">
+          <div class="input-group-append">
+            <button class="btn btn-navbar show-search bg-transparent border-0" type="button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </li> -->
+    <li class="nav-item">
+      <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+        <i class="fas fa-bars"></i>
+      </a>
+    </li>
+  </ul>
+</nav>
+<script type="text/javascript">
+  $(".box-lang").hide()
+  $("#currLang").click(function(e){
+    e.preventDefault()
+    $(".box-lang").show()
+  })
+
+  $(".itemLang").click(function(e){
+    e.preventDefault()
+    var currLang = $("#currLang").find('span').attr('class')
+    var nextLang = $(this).find('span').attr('class')
+
+   $("#currLang").find('span').removeClass(currLang).addClass(nextLang)
+    $(".box-lang").hide()
+    // alert(currLang)
+  })
+</script>
+      <!-- /.navbar -->
+
+      <style>
+  .card-homepage{
+    border-radius: 10px;
+border: 1px solid var(--boarder-separator-divider-stroke-light, #D9D9D9);
+background: #FFF;
+
+/* Shadow Carousel */
+box-shadow: 1.5px 1px 10px 0px rgba(119, 119, 119, 0.10);
+text-align: center;
+  }
+
+  .title-card{
+    color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+margin-bottom: 0px;
+  }
+  .description-card{
+    color: var(--text-black-low-contrast, #666);
+text-align: center;
+font-family: Inter;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 15px; /* 150% */
+margin-bottom: 9px;
+  }
+  .detail-card{
+    color: var(--text-styled, #259047);
+text-align: center;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 15px; /* 187.5% */
+  }
+  .img-card{
+    width: 68px;
+  }
+  .card-body {
+    padding: 0.75rem;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .card{
+      padding: 0px;
+    }
+    .card-body {
+    padding: 3px;
+  }
+    .title-card{
+font-size: 14px;
+  }
+  .description-card{
+font-size: 8px;
+margin-bottom: 0px;
+  }
+  .detail-card{
+font-size:8px;
+padding-top: 1px;
+  }
+  .img-card{
+    width: 37px;
+  }
+  }
+
+  .description-card {
+    /* font-size: 1em; */
+    /* margin: 0 0 16px; */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* max-height: 4.5em;  */
+    /* Adjust line height * number of lines */
+}
+</style>
+
+<input type="hidden" id="btn-modal-anouncement" data-toggle="modal" data-target="#modalAnnouncement" style="display: hidden;">
+</input>
+
+<div class="modal fade" id="modalAnnouncement" tabindex="-1" role="dialog" aria-labelledby="modalAnnouncementTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" style="box-shadow: none; background-color:transparent; border: none;">
+      <div class="modal-header" style="background-color: #0000;box-shadow: none;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" style="color: white;font-weight: bold;">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-color: #ffff;">
+        <a href="https://baznas.go.id/announcement">
+        <img src="https://baznas.go.id/assets/images/homepage/Web Banner Pernyataan Resmi BAZNAS.png" alt="" style="width:100%">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="card mb-5 shadow-none">
+      <div class="card-body pb-5 pl-0 pr-0 pt-0">
+        <div class="row">
+
+          <!-- Banner -->
+          <div class="col-12">
+            <div id="owl-carousel" class="owl-carousel owl-theme">
+            </div>
+          </div>
+
+          <!-- icon zis -->
+          <div class="col-12">
+            <div class="row ml-2 mr-2">
+              <div class="col-4 px-1">
+                <div class="card card-homepage">
+                  <div class="card-body ">
+                    <center>
+                      <a href="https://baznas.go.id/zakat">
+                    <img class="img-card" src="https://baznas.go.id/assets/images/homepage/Card_Icon_Zakat2.png" alt=""></a>
+                    </center>
+                    <p class="title-card mt-2">Zakat</p>
+                    <p class="card-text description-card">Zakat berasal dari kata ‘zaka’ yang berarti suci...</p>
+                    <a href="https://baznas.go.id/zakat" class="card-link detail-card">Selengkapnya  <img src="https://baznas.go.id/assets/images/homepage/Card_Icon_Arrow.png" alt="" width="12px"></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4 px-1">
+              <div class="card card-homepage">
+                  <div class="card-body ">
+                    <center>
+                    <a href="https://baznas.go.id/infak">
+                    <img class="img-card" src="https://baznas.go.id/assets/images/homepage/Card_Icon_Infak2.png" alt=""></a>
+                    </center>
+                    <p class="title-card mt-2">Infak</p>
+                    <p class="card-text description-card">Infak berasal dari Bahasa Arab `anfaqa` berarti... </p>
+                    <a href="https://baznas.go.id/infak" class="card-link detail-card">Selengkapnya  <img src="https://baznas.go.id/assets/images/homepage/Card_Icon_Arrow.png" alt="" width="12px"></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4 px-1">
+              <div class="card card-homepage">
+                  <div class="card-body ">
+                    <center>
+                    <a href="https://baznas.go.id/sedekah">
+                    <img class="img-card" src="https://baznas.go.id/assets/images/homepage/Card_Icon_Sedekah2.png" alt=""></a>
+                    </center>
+                    <p class="title-card mt-2">Sedekah</p>
+                    <p class="card-text description-card">Sedekah berasal dari kata `shadaqah` yang berarti...</p>
+                    <a href="https://baznas.go.id/sedekah" class="card-link detail-card">Selengkapnya  <img src="https://baznas.go.id/assets/images/homepage/Card_Icon_Arrow.png" alt="" width="12px"></a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-12 mt-2">
+            <div class="owl-statistik" id="owl-statistik">
+
+            </div>
+          </div>
+
+          <!-- News -->
+          <div class="col-12 mt-3">
+            <h4 class="color-main font-weight-bold text-center pl-2 pr-2 mb-4">Berita Terkini</h4>
+            <div class="row">
+              <div class="col-12 col-sm-6" id="owl-news">
+              </div>
+              <div class="col-12 col-sm-6" id="owl-news-small">
+              </div>
+              <div class="col-12 text-center">
+                <a href="https://baznas.go.id/news-all" class="btn btn-main btn-hover-main">Load more</a>
+              </div>
+          </div>
+          </div>
+
+
+          <div class="col-12 mt-5">
+          <h4 class="color-main font-weight-bold text-center pl-2 pr-2 mb-3">Berita Program</h4>
+          <div class="row">
+                <div class="col-12 col-sm-6" id="owl-program">
+                </div>
+                <div class="col-12 col-sm-6" id="owl-program-smalls">
+                </div>
+          </div>
+          <div class="col-12 text-center">
+                <a href="https://baznas.go.id/berita-pendistribusian" class="btn btn-main btn-hover-main">Load more</a>
+              </div>
+          </div>
+
+          <div class="col-12 mt-5">
+              <h4 class="color-main font-weight-bold text-center pl-2 pr-2 mb-3">Nikmat Zakat</h4>
+              <div class="row">
+                <div class="col-12 col-sm-6" id="owl-featured">
+                </div>
+                <div class="col-12 col-sm-6" id="owl-featured-small">
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                  <a href="https://baznas.go.id/berkah-zakat-all" class="btn btn-main btn-hover-main">Load more</a>
+                </div>
+          </div>
+
+          <div class="col-12 mt-5">
+              <h4 class="color-main font-weight-bold text-center pl-2 pr-2 mb-3">BAZNAS TV</h4>
+              <div class="row" id="owl-tv">
+              </div>
+              <div class="col-12 text-center">
+                <a href="https://baznas.go.id/berita-all" class="btn btn-main btn-hover-main">Load more</a>
+              </div>
+          </div>
+
+              <!-- Footer -->
+              <div class="col-12 mt-5 mb-n3 bg-main pt-5">
+  <p class="text-white text-center">Dapatkan Update Berita dan Informasi Penyaluran Zakat, Infak, dan Sedekah.</p>
+
+  <!-- Begin Mailchimp Signup Form -->
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    #mc_embed_signup{font:14px Helvetica,Arial,sans-serif; }
+    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+  </style>
+  <div id="mc_embed_signup">
+  <form action="https://baznas.us20.list-manage.com/subscribe/post?u=43c9b3cd711b195b161c3dfbb&amp;id=c81099748d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll">
+    
+        <!-- <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> -->
+        <div class="mc-field-group" align="center" style="padding-bottom: 4px;">
+          <input type="email" value="" name="EMAIL" class="required email form-control form-control-lg border-0 rounded-pill-left h6" id="mce-EMAIL" placeholder="   Ketik email Anda di sini" required style="width: 80%; border-radius: 25px;">
+        </div>
+        <div id="mce-responses" class="clear text-center">
+          <div class="response" id="mce-error-response" style="display:none;width: 100%; color: #fff;"></div>
+          <div class="response" id="mce-success-response" style="display:none;width: 100%; color: #fff;"></div>
+        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_efd3c00bb388a61bac718c0b2_f083769bac" tabindex="-1" value=""></div>
+        <div align="center">
+          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="width: 110px; background-color: #ee0d0d;">
+        </div>
+      </div>
+  </form>
+  </div>
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+  <script type='text/javascript'>
+    (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);
+  </script>
+<!--End mc_embed_signup-->
+
+  <!-- <div class="input-group mb-3 pl-4 pr-4">
+    <input type="text" class="form-control form-control-lg border-0 rounded-pill-left h6" placeholder="Ketik email Anda dan kirim....">
+    <div class="input-group-append">
+      <button class="input-group-text bg-white border-0 rounded-pill-right">
+        <i class="fas fa-bell color-main"></i>
+      </button>
+    </div>
+  </div> -->
+
+  <h4 class="text-white font-weight-bold text-center">Follow us</h4>
+  <div class="row pb-2">
+    <div class="col-12 text-white text-center">
+      <a href="https://www.facebook.com/badanamilzakat/" target="_blank">
+        <i class="fab text-white fa-facebook-square fa-2x m-2"></i>
+      </a>
+      <a href="https://www.instagram.com/baznasindonesia/" target="_blank">
+        <i class="fab text-white fa-instagram-square fa-2x m-2"></i>
+      </a>
+      <a href="https://twitter.com/baznasindonesia" target="_blank">
+        <i class="fab text-white fa-twitter-square fa-2x m-2"></i>
+      </a>
+      <!-- <a href="https://api.whatsapp.com/send?phone=+6287877373555&text=Assalamu%27alaikum%20BAZNAS" target="_blank">
+        <i class="fab text-white fa-whatsapp-square fa-2x m-2"></i>
+      </a> -->
+      <a href="https://www.linkedin.com/company/baznas-indonesia" target="_blank">
+        <i class="fab text-white fa-linkedin fa-2x m-2"></i>
+      </a>
+      <a href="https://www.youtube.com/channel/UCmY29I5na-P9Q108PY5By4w" target="_blank">
+        <i class="fab text-white fa-youtube fa-2x m-2"></i>
+      </a>
+      <a href="https://vt.tiktok.com/ZSJhFdqLC/" target="_blank">
+        <img class="ml-2 mt-n3" src="https://baznas.go.id/assets/Icon/Footer/Tiktok-square.svg" alt="Tiktok Baznas" width="28" height="32" style="margin-top:-15px;" />
+      </a>
+    </div>
+  </div>
+  <div class="text-center mt-5 mb-2">
+    <img src="https://baznas.go.id/assets/images/logo_baznas_mobile_white.png" class="img-fluid">
+  </div>
+  <div class="row mb-3">
+    <div class="col-12">
+      <div class="text-center">
+        <p class="text-warning">Copyright © 2024 BAZNAS</p>
+        <p class="text-white mb-0"><a href="kebijakan-privasi" class="text-white">Kebijakan Privasi</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="syarat-ketentuan" class="text-white">Syarat & Ketentuan</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="faq-baznas" class="text-white">FAQ</a></p><br/>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+          </div>
+        </div>
+  </section>
+  <!-- /.content -->
+</div>
+
+<script>
+$( document ).ready(function() {
+    
+  function getCookie(name) {
+    const cookiesArray = document.cookie.split(';');
+    for (let cookie of cookiesArray) {
+        const [cookieName, cookieValue] = cookie.trim().split('=');
+        if (cookieName === name) {
+            return cookieValue;
+        }
+    }
+    return "";
+}
+
+const cookiePopupBanner = getCookie("popup_banner_2");
+if (cookiePopupBanner != "false") {
+  $('#btn-modal-anouncement').click();
+}
+    const expirationDate = new Date("2024-12-31T23:59:59").toUTCString();
+    document.cookie = "popup_banner_2=false; expires=" + expirationDate + "; path=/";
+});
+  
+</script>
+
+<!-- /.content-wrapper -->
+<script type="text/javascript">
+  $(".img-agenda img").css({
+    'width': '100%',
+    'height': '100px',
+    'display': 'none'
+  })
+  $(".img-agenda-one img").css({
+    'width': '100%',
+    'height': '180px'
+  })
+  var img = $(".img-agenda img")
+  var no = 0;
+  img.map((e) => {
+    no++
+    $("#pimpinan" + no).css({
+      'background-image': 'url(' + img[e].src + ')'
+    })
+    // console.log(img[e].src)
+  })
+</script>
+
+<script>
+  var BASE_URL_WEBSITE = "https://baznas.go.id/";
+  var BASE_URL_INTRANET = "https://intranet.baznas.go.id/";
+
+  try {
+    fetch(BASE_URL_WEBSITE+'load-banner')
+      .then(response => response.json())
+      .then(data => {
+        const bannerContainer = document.getElementById('owl-carousel');
+        bannerContainer.innerHTML = '';
+        data.banner.forEach(banner => {
+          const name = banner.nama_file;
+          const item = `
+        <div class="item">
+          <a href="${banner.tautan}" target="_blank">
+          <img style="height: auto; width: 100%;" src="${BASE_URL_INTRANET}/attachment/banner/${name}">
+        </a>
+        </div>
+      `;
+          bannerContainer.insertAdjacentHTML('beforeend', item);
+        });
+
+        $(document).ready(function() {
+          $("#owl-carousel").owlCarousel({
+          navigation: true, 
+          slideSpeed: 5000,
+          paginationSpeed: 5000,
+          items: 1,
+          singleItem: true,
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          autoplayHoverPause: true
+          });
+        });
+
+      });
+  } catch (error) {
+    console.log('Ada kesalahan dalam menjalankan fetch:', error);
+  }
+</script>
+
+<script>
+
+  try {
+    fetch(BASE_URL_WEBSITE+'load-news')
+      .then(response => response.json())
+      .then(data => {
+        const newsContainer = document.getElementById('owl-news');
+        newsContainer.innerHTML = '';
+        const newsContainerSmall = document.getElementById('owl-news-small');
+        newsContainerSmall.innerHTML = '';
+        let isFirstIteration = true;
+        data.news.forEach(news => {
+          // let name = news.title.replaceAll(' ', '_');
+          // let name = news.title.replace(/[^\w\s]/g, '_');
+          const name = news.title.replace(/[^a-zA-Z0-9\s]/g, '_').replaceAll(' ', '_');
+
+          const cleanedContent = news.content.replace('&lt;p&gt;', '');
+          const limitContent = cleanedContent.replace(/<[^>]*>/g, '').substring(0, 150) + '...';
+          const limitContentSmall = cleanedContent.replace(/<[^>]*>/g, '').substring(0, 55) + '...';
+          const penulis = news.date + " | " + news.author;
+          // Truncating title
+          const title = (news.title.length > 67) ? news.title.substring(0, 67) + ' ...' : news.title;
+          const titleSmall = (news.title.length > 44) ? news.title.substring(0, 44) + ' ...' : news.title;
+          const path = news.path;
+          const id = news.id;
+          const content = news.content;
+
+          if (isFirstIteration) {
+            const item = `
+            <a href="${BASE_URL_WEBSITE}news-show/${name}/${id}" target="_blank">
+            <div class="border w-100" style="height:180px;background-image:url('${BASE_URL_INTRANET}attachment/berita/${path}');background-repeat: no-repeat;background-size: cover;"></div>
+            <div class="">
+                    <div style="height:50px;line-height: 19px; overflow: hidden;" class="p-2">
+                      <p class="font-weight-bold">${title}</p>
+                    </div>
+                    <div style="height:77px;line-height: 19px; overflow: hidden;" class="p-2 pt-3 mb-1">
+                      <div style="font-size:12px;">${limitContent}</div>
+                    </div>
+                    <div class="px-2">
+                      <p class="text-right text-secondary font-10">${penulis}</p>
+                    </div>
+                  </div>
+        </a>
+        <div class="item">
+          
+        </div>
+      `;
+          newsContainer.insertAdjacentHTML('beforeend', item);
+          isFirstIteration = false;
+          }else{
+            const itemSmall = `
+            <div class="container">
+                      <div class="row border-bottom mb-3 pb-2">
+
+                        <div class="col-4">
+                          <a href="${BASE_URL_WEBSITE}news-show/${name}/${id} ">
+                            <div class="border w-100" style="height:90px;background-image:url('${BASE_URL_INTRANET}attachment/berita/${path}');background-repeat: no-repeat;background-size: cover;"></div>
+                          </a>
+                        </div>
+                        <div class="col-8 pl-2">
+                          <a href="${BASE_URL_WEBSITE}news-show/${name}/${id}">
+                            <div style="height:38px;overflow:hidden;" class="">
+                              <h6 class="text-capitalize font-weight-bold color-main">${titleSmall}</h6>
+                            </div>
+                            <div style="font-size:12px;line-height: 18px;height:38px;" class="">${limitContentSmall}</div>
+                            <p class="text-right text-secondary font-10 m-0">${penulis}</p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+      `;
+          newsContainerSmall.insertAdjacentHTML('beforeend', itemSmall);
+          }
+         
+        });
+
+      });
+  } catch (error) {
+    console.log('Ada kesalahan dalam menjalankan fetch:', error);
+  }
+</script>
+
+<script>
+
+  try {
+    fetch(BASE_URL_WEBSITE+'load-news-distribution')
+      .then(response => response.json())
+      .then(data => { 
+        const programContainer = document.getElementById('owl-program');
+        programContainer.innerHTML = '';
+        const programContainers = document.getElementById('owl-program-smalls');
+        programContainers.innerHTML = '';
+        let isFirstIteration = true;
+        let iterationCount = 0;
+        data.news.forEach(news => { 
+          //const name = news.title.replaceAll(' ', '_');
+          const cleanedContent = news.berita.replace('&lt;p&gt;', '');
+          const limitContent = cleanedContent.replace(/<[^>]*>/g, '').substring(0, 150) + '...';
+          const limitContentSmall = cleanedContent.replace(/<[^>]*>/g, '').substring(0, 55) + '...';
+          const penulis = news.tanggal + " | " + news.penulis;
+          // Truncating title
+          const title = (news.judul.length > 67) ? news.judul.substring(0, 67) + ' ...' : news.judul;
+          const titleSmall = (news.judul.length > 45) ? news.judul.substring(0, 45) + ' ...' : news.judul;
+          //const path = news.path;
+          const id = news.id;
+          const content = news.berita;
+
+          for (let i = 0; i < news.gambar.length; i++) {
+    let jns = news.gambar[i].jenis;
+    let image = '';
+    if (jns === 'utama') {
+        images_utama = news.gambar[i].gambar;
+    }
+}
+
+let images = images_utama;
+// console.log("iteration"+images);
+let url = title.toLowerCase().replace(/\s+/g, '-');
+
+
+          if (isFirstIteration) {  
+            const item = `
+            <a href="${BASE_URL_WEBSITE}pendistribusian-show/${url}/${id}" target="_blank">
+            <div class="border w-100" style="height:180px;background-image:url('${images}');background-repeat: no-repeat;background-size: cover;"></div>
+            <div class="">
+                    <div style="height:50px;line-height: 19px; overflow: hidden;" class="p-2">
+                      <p class="font-weight-bold">${title}</p>
+                    </div>
+                    <div style="height:77px;line-height: 19px; overflow: hidden;" class="p-2 pt-3 mb-1">
+                      <div style="font-size:12px;">${limitContent}</div>
+                    </div>
+                    <div class="px-2">
+                      <p class="text-right text-secondary font-10">${penulis}</p>
+                    </div>
+                  </div>
+        </a>
+        <div class="item">
+          
+        </div>
+      `;
+        programContainer.insertAdjacentHTML('beforeend', item);
+          isFirstIteration = false;
+          }else{ 
+            // console.log(isFirstIteration)
+            if (iterationCount < 3) {
+              const itemSmall = ` <div class="container">
+                      <div class="row border-bottom mb-3 pb-2">
+
+                        <div class="col-4">
+                          <a href="${BASE_URL_WEBSITE}pendistribusian-show/${url}/${id} ">
+                            <div class="border w-100" style="height:90px;background-image:url('${images}');background-repeat: no-repeat;background-size: cover;"></div>
+                          </a>
+                        </div>
+                        <div class="col-8 pl-2">
+                          <a href="${BASE_URL_WEBSITE}pendistribusian-show/${url}/${id}">
+                            <div style="height:38px;overflow:hidden;" class="">
+                              <h6 class="text-capitalize font-weight-bold color-main">${titleSmall}</h6>
+                            </div>
+                            <div style="font-size:12px;line-height: 18px;height:38px;" class="">${limitContentSmall}</div>
+                            <p class="text-right text-secondary font-10 m-0">${penulis}</p>
+                          </a>
+                        </div>
+                      </div>
+                    </div> `;
+
+      programContainers.insertAdjacentHTML('beforeend', itemSmall);
+
+
+            }
+            else{
+
+            }
+
+            iterationCount++
+            
+          }
+         
+        });
+
+      });
+  } catch (error) {
+    console.log('Ada kesalahan dalam menjalankan fetch:', error);
+  }
+</script>
+
+
+<script>
+
+  try {
+    fetch(BASE_URL_WEBSITE+'load-news-featured')
+      .then(response => response.json())
+      .then(data => {
+        const featuredContainer = document.getElementById('owl-featured');
+        featuredContainer.innerHTML = '';
+        const featuredContainerSmall = document.getElementById('owl-featured-small');
+        featuredContainerSmall.innerHTML = '';
+        let isFirstIteration = true;
+        data.featured.forEach(featured => {
+          const name = featured.title.replaceAll(' ', '_');
+          const cleanedContent = featured.content.replace('&lt;p&gt;', '');
+          const limitContent = cleanedContent.replace(/<[^>]*>/g, '').substring(0, 150) + '...';
+          const limitContentSmall = cleanedContent.replace(/<[^>]*>/g, '').substring(0, 55) + '...';
+          const penulis = featured.date + " | " + featured.author;
+          // Truncating title
+          const title = (featured.title.length > 67) ? featured.title.substring(0, 67) + ' ...' : featured.title;
+          const titleSmall = (featured.title.length > 44) ? featured.title.substring(0, 44) + ' ...' : featured.title;
+          const path = featured.path;
+          const id = featured.id;
+          const content = featured.content;
+
+          if (isFirstIteration) {
+            const item = `
+            <a href="${BASE_URL_WEBSITE}berkah-zakat/${name}/${id}" target="_blank">
+            <div class="border w-100" style="height:180px;background-image:url('${BASE_URL_INTRANET}attachment/featured/${path}');background-repeat: no-repeat;background-size: cover;"></div>
+            <div class="">
+                    <div style="height:50px;line-height: 19px; overflow: hidden;" class="p-2">
+                      <p class="font-weight-bold">${title}</p>
+                    </div>
+                    <div style="height:77px;line-height: 19px; overflow: hidden;" class="p-2 pt-3 mb-1">
+                      <div style="font-size:12px;">${limitContent}</div>
+                    </div>
+                    <div class="px-2">
+                      <p class="text-right text-secondary font-10">${penulis}</p>
+                    </div>
+                  </div>
+        </a>
+        <div class="item">
+          
+        </div>
+      `;
+          featuredContainer.insertAdjacentHTML('beforeend', item);
+          isFirstIteration = false;
+          }else{
+            const itemSmall = `
+            <div class="container">
+                      <div class="row border-bottom mb-3 pb-2">
+
+                        <div class="col-4">
+                          <a href="${BASE_URL_WEBSITE}berkah-zakat/${name}/${id} ">
+                            <div class="border w-100" style="height:90px;background-image:url('${BASE_URL_INTRANET}attachment/featured/${path}');background-repeat: no-repeat;background-size: cover;"></div>
+                          </a>
+                        </div>
+                        <div class="col-8 pl-2">
+                          <a href="${BASE_URL_WEBSITE}berkah-zakat/${name}/${id}">
+                            <div style="height:38px;overflow:hidden;" class="">
+                              <h6 class="text-capitalize font-weight-bold color-main">${titleSmall}</h6>
+                            </div>
+                            <div style="font-size:12px;line-height: 18px;height:38px;" class="">${limitContentSmall}</div>
+                            <p class="text-right text-secondary font-10 m-0">${penulis}</p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+      `;
+          featuredContainerSmall.insertAdjacentHTML('beforeend', itemSmall);
+          }
+         
+        });
+
+      });
+  } catch (error) {
+    console.log('Ada kesalahan dalam menjalankan fetch:', error);
+  }
+</script>
+
+<script>
+
+  try {
+    fetch(BASE_URL_WEBSITE+'load-news-tv')
+      .then(response => response.json())
+      .then(data => {
+        const tvContainer = document.getElementById('owl-tv');
+        tvContainer.innerHTML = '';
+        data.newsvideo.forEach(newsvideo => {
+          const name = newsvideo.title.replaceAll(' ', '_');
+          const penulis = newsvideo.date + " | " + newsvideo.author;
+          const title = (newsvideo.title.length > 67) ? newsvideo.title.substring(0, 67) + ' ...' : newsvideo.title;
+          const id = newsvideo.id;
+          const content = newsvideo.content;
+          const embed = newsvideo.embed;
+          const date = newsvideo.date;
+          const item = `<div class="col-6 col-sm-6 px-2" >
+          <a href="${embed}">
+                        <div class="img-agenda-one">
+                        <iframe src="${embed}" title="${title}" allowfullscreen style="width: 100%;"></iframe>
+                        </div>
+                      </a>
+                      <div class="">
+                        <a href="${embed}">
+
+                          <div style="height: 90px;line-height: 19px; overflow: hidden;" class="p-2">
+                            <p class="font-weight-bold">${title} </p>
+                          </div>
+                         
+                          <div class="px-2">
+                            <p class="text-right text-secondary font-10">${penulis}</p>
+                          </div>
+                        </a>
+                      </div>
+                      </div>
+      `;
+          tvContainer.insertAdjacentHTML('beforeend', item);
+         
+        });
+
+      });
+  } catch (error) {
+    console.log('Ada kesalahan dalam menjalankan fetch:', error);
+  }
+</script>
+
+<script>
+  var BASE_URL_WEBSITE = "https://baznas.go.id/";
+  var BASE_URL_INTRANET = "https://intranet.baznas.go.id/";
+
+  try {
+    fetch(BASE_URL_WEBSITE+'load-statistik')
+      .then(response => response.json())
+      .then(data => {
+        const statistikContainer = document.getElementById('owl-statistik');
+        statistikContainer.innerHTML = '';
+        data.list.forEach(list => {
+          const urlGambar = list.gambar;
+          const item = `<div class="item"><img class="w-100 news-small-size" src="${urlGambar}" alt="Statistik Penghimpunan"></div>`;
+
+          statistikContainer.insertAdjacentHTML('beforeend', item);
+        }) 
+       
+        if (data.list.length > 1) {
+            statistikContainer.classList.add("owl-carousel");
+            $("#owl-statistik").owlCarousel({
+            navigation: true, 
+            slideSpeed: 5000,
+            paginationSpeed: 5000,
+            items: 1,
+            singleItem: true,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true
+            });
+        }
+      });
+  } catch (error) {
+    console.log('Ada kesalahan dalam menjalankan fetch:', error);
+  }
+</script>
+
+
+      <div class="d-block d-sm-none">
+        <a id="back-to-top" href="#" class="btn btn-main btn-hover-main back-to-top" role="button" aria-label="Scroll to top" style="display: none; bottom: 11rem;border:1px solid #fff">
+          <i class="fas fa-chevron-up"></i>
+        </a>
+
+          <!-- <a href="https://api.whatsapp.com/send?phone=+6281380990456&text=Assalamu%27alaikum%20BAZNAS" class="btn btn-primary back-to-top bg-transparent border-0 p-0" target="_blank" role="button" style="max-width: 40px; bottom: 7.25rem; right: 19.45rem;">
+            <img src="https://baznas.go.id/assets/images/whatsapp_02.png" class="img-fluid">
+          </a> -->
+
+        
+        <!-- <a href="https://bazn.as/WAlayanan" class="btn btn-primary back-to-top bg-transparent border-0 p-0" target="_blank" role="button" style="max-width: 40px; bottom: 7.25rem; right: 19.45rem;">
+          <img src="https://baznas.go.id/assets/images/whatsapp_02.png" class="img-fluid">
+        </a> -->
+      </div>
+      <!-- 28.25rem -->
+      <div class="d-none d-sm-block">
+        <a id="back-to-top2" href="#" class="btn btn-main btn-hover-main back-to-top" role="button" aria-label="Scroll to top" style="display: none; bottom: 11rem; border:1px solid #fff">
+          <i class="fas fa-chevron-up"></i>
+        </a>
+        <!-- <a href="https://bazn.as/WAlayanan" class="btn btn-primary back-to-top bg-transparent border-0 p-0" target="_blank" role="button" style="max-width: 40px; bottom: 7.25rem; ">
+          <img src="https://baznas.go.id/assets/images/whatsapp_02.png" class="img-fluid">
+        </a> -->
+      </div>
+
+      
+
+
+
+      <!-- bottom-menu -->
+            
+<style>
+  p.text-bottom-menu{
+    color: #797877;
+  }
+
+  .img-fluid-new{
+    max-height: 28px;
+  }
+  .img-fluid-new:active {
+  background-color: #ccc;
+}
+</style>
+
+<footer class="main-footer position-fixed pt-3 pb-2 w-100">
+  <div class="row">
+  <div class="col mx-1">
+      <h3 class="text-center mb-0">
+        <a href="https://bazn.as/Konfirmasi" target="_blank">
+                      <img src="https://baznas.go.id/assets/images/bottom-menu/navigasi/Nav_Konfirmasi_Off.png" class="img-fluid-new mt-n3" alt="Konfirmasi Zakat Button">
+                    <!-- <i class="fas fa-wallet text-danger"></i><br/> -->
+          <p class="text-center font-weight-bold font-8 text-bottom-menu d-none d-sm-block">Konfirmasi Zakat</p>
+          <p class="text-center font-weight-bold font-8 text-bottom-menu d-block d-sm-none">Konfirmasi Zakat</p>
+        </a>
+      </h3>
+    </div>
+  <div class="col mx-1">
+      <h3 class="text-center mb-0">
+        <a href="https://baznas.go.id/kalkulatorzakat">
+          <!-- <i class="fas fa-calculator text-warning"></i><br/> -->
+                      <img src="https://baznas.go.id/assets/images/bottom-menu/navigasi/Nav_Kalkulator_Off.png" class="img-fluid-new mt-n3" alt="Kalkulator Zakat Button">
+                    <p class="text-center font-weight-bold font-8 text-bottom-menu d-none d-sm-block">Kalkulator Zakat</p>
+          <p class="text-center font-weight-bold font-8 text-bottom-menu d-block d-sm-none">Kalkulator Zakat</p>
+        </a>
+      </h3>
+    </div>
+   
+    <div class="col mx-1">
+      <h3 class="text-center mb-0">
+        <a href="https://baznas.go.id/bayarzakat">
+          <img src="https://baznas.go.id/assets/images/bottom-menu/navigasi/Nav_Bayar2.png" class="img-fluid-new mt-n3" style="position: relative; top: -23px; max-height: 64px; filter: drop-shadow(2px 4px 10px rgba(104, 104, 104, 0.50));" alt="Bayar Zakat Button">
+          <!-- <i class="fas fa-wallet text-danger"></i><br/> -->
+          <p class="text-center font-weight-bold font-8 text-bottom-menu d-none d-sm-block" style="position: relative; top: -14px; font-size:11px;"> <strong>Bayar Zakat</strong> </p>
+          <p class="text-center font-weight-bold font-8 text-bottom-menu d-block d-sm-none" style="position: relative; top: -14px; font-size:11px;"><strong>Bayar Zakat</strong></p>
+        </a>
+      </h3>
+    </div>
+    <div class="col mx-1">
+      <h3 class="text-center mb-0">
+        <a href="https://baznas.go.id/sedekahbaznas">
+          <!-- <i class="fas fa-hand-holding-heart text-warning"></i><br/> -->
+                      <img src="https://baznas.go.id/assets/images/bottom-menu/navigasi/Nav_Sedekah_Off.png" class="img-fluid-new mt-n3" alt="Sedekah Button">
+                    <p class="text-center font-weight-bold font-8 text-bottom-menu d-none d-sm-block">Sedekah<br/></p>
+          <p class="text-center font-weight-bold font-8 text-bottom-menu d-block d-sm-none">Sedekah<br/></p>
+        </a>
+      </h3>
+    </div>
+    <div class="col mx-1">
+      <h3 class="text-center mb-0">
+        <a href="https://baznas.go.id/rekening">
+          <!-- <i class="fas fa-credit-card text-warning"></i><br/> -->
+                      <img src="https://baznas.go.id/assets/images/bottom-menu/navigasi/Nav_Rekening_Off_with_Highlight.png" class="img-fluid-new mt-n3" alt="Rekening Zakat Button">
+            <!-- <img src="https://baznas.go.id/assets/images/bottom-menu/navigasi/Nav_Rekening_Off.png" class="img-fluid-new mt-n3" > -->
+                    <p class="text-center font-weight-bold font-8 text-bottom-menu d-none d-sm-block">Transfer Zakat </p>
+          <p class="text-center font-weight-bold font-8 text-bottom-menu d-block d-sm-none">Transfer Zakat </p>
+        </a>
+      </h3>
+    </div>
+  </div>
+</footer>
+            <!-- /.bottom-menu -->
+
+      <!-- right sidebar -->
+      
+<aside class="control-sidebar bg-main" style="top: 100px; height: 100%;">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <!-- Sidebar Menu -->
+    <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
+        <li class="nav-item">
+          <a href="https://baznas.go.id/" class="nav-link ">
+            <i class="nav-icon fas fa-home"></i>
+            <p class="text-uppercase font-weight-bold active">
+              beranda
+            </p>
+          </a>
+        </li>
+        <li class="nav-item has-treeview ">
+          <a href="#" class="nav-link">
+
+                          <img src="/assets/images/Icon Tentang BAZNAS 22x17 px.svg" class="img-fluid" style="width: 1.2rem; margin-left: 0.3rem;">
+                        <p class="text-uppercase font-weight-bold ml-1">
+              tentang baznas
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview pl-4">
+            <li class="nav-item">
+              <a href="https://baznas.go.id/baznas-profile" class="nav-link">
+                <p class="">Profil BAZNAS</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/struktur-baznas" class="nav-link">
+                <p class="">Struktur BAZNAS</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/penghargaan" class="nav-link">
+                <p class="">Penghargaan</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/mitra-baznas" class="nav-link">
+                <p class="">Mitra BAZNAS</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/pemberitahuan" class="nav-link">
+                <p class="">Pemberitahuan</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/karir" class="nav-link">
+                <p class="">Karir</p>
+              </a>
+            </li>
+            <!-- <li class="nav-item">
+              <a href="https://baznas.go.id/kontak-baznas" class="nav-link">
+                <p class="">Kontak BAZNAS</p>
+              </a>
+            </li> -->
+            <!-- <li class="nav-item">
+              <a href="https://baznas.go.id/tender" class="nav-link">
+                <p class="">Lelang</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/suplier-registrasi" class="nav-link">
+                <p class="">Registrasi Suplier</p>
+              </a>
+            </li> -->
+          </ul>
+        </li>
+
+        
+
+        <!-- PROFIL PROGRAM PENDISTRIBUSIAN -->
+        <li class="nav-item has-treeview ">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-gift"></i>
+            <p class="text-uppercase font-weight-bold">
+            Profil Program
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview pl-4">
+            <li class="nav-item">
+              <a href="https://baznas.go.id/program/kemanusiaan" class="nav-link">
+                <p class="">Kemanusiaan</p>
+              </a>
+            </li>            
+            <li class="nav-item">
+              <a href="https://baznas.go.id/program/kesehatan" class="nav-link">
+                <p class="">Kesehatan</p>
+              </a>
+            </li>            
+            <li class="nav-item">
+              <a href="https://baznas.go.id/program/pendidikan-dakwah" class="nav-link">
+                <p class="">Pendidikan dan Dakwah</p>
+              </a>
+            </li>            
+            <li class="nav-item">
+              <a href="https://baznas.go.id/program/kebencanaan" class="nav-link">
+                <p class="">Kebencanaan</p>
+              </a>
+            </li>                        
+            <li class="nav-item has-treeview ">
+              <a href="#" class="nav-link">
+                <p>Ekonomi<i class="fas fa-angle-left right"></i></p>
+              </a>
+              <ul class="nav nav-treeview pl-4">
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/program/ekonomi-pedesaan" class="nav-link">
+                    <p class="">Ekonomi Pedesaan</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/program/ekonomi-perkotaan" class="nav-link">
+                    <p class="">Ekonomi Perkotaan</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/program/optimasi-produk" class="nav-link">
+                    <p class="">Optimasi dan Pemasaran Produk</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a href="https://baznas.go.id/brand" class="nav-link">
+           
+            <img class="nav-icon" src="/assets/images/Icon Branding 22x22,3 px.svg" alt="" style="width: 1.2rem; margin-left: 0.3rem;">
+            <p class="text-uppercase ml-1 font-weight-bold ">
+              panduan brand
+            </p>
+          </a>
+        </li>
+
+        <li class="nav-item has-treeview ">
+          <a href="" class="nav-link">
+            <i class="nav-icon fas fa-wallet"></i>
+            <p class="text-uppercase font-weight-bold">
+              zakat
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview pl-4">
+            <li class="nav-item">
+              <a href="https://baznas.go.id/zakat" class="nav-link">
+                <p class="">Tentang Zakat</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/zakatfitrah" class="nav-link">
+                <p class="">Zakat Fitrah</p>
+              </a>
+            </li>
+            <li class="nav-item has-treeview ">
+              <a href="" class="nav-link tree">
+                <p class="tree">
+                  Zakat Maal
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview pl-4">
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/zakatmaal" class="nav-link">
+                    <p class="">Tentang Zakat Maal</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/zakatpenghasilan" class="nav-link">
+                    <p class="">Penghasilan</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/zakatperusahaan" class="nav-link">
+                    <p class="">Perusahaan</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/zakatperdagangan" class="nav-link">
+                    <p class="">Perdagangan</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/zakatemas" class="nav-link">
+                    <p class="">Emas</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/zakatsaham" class="nav-link">
+                    <p class="">Saham</p>
+                  </a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a href="https://baznas.go.id/zakatreksadana" class="nav-link">
+                    <p class="">Reksadana</p>
+                  </a>
+                </li> -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/infak" class="nav-link">
+                <p class="">Infak</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/sedekah" class="nav-link">
+                <p class="">Sedekah</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/fidyah" class="nav-link">
+                <p class="">Fidyah</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item has-treeview ">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-heart"></i>
+            <p class="text-uppercase font-weight-bold">
+              layanan
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview pl-4">
+            <li class="nav-item">
+              <a href="https://baznas.go.id/upz" class="nav-link">
+                <p class="" title="Unit Pengumpul Zakat">UPZ</p>
+              </a>
+            </li>
+            <li class="nav-item">
+            <a href="https://bazn.as/Konfirmasi" target="_blank" class="nav-link">
+                <p class=""> Konfirmasi ZIS </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/kurban-online" class="nav-link">
+                <p class="">Kurban Online</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/kalkulatorzakat" class="nav-link">
+                <p class="">Kalkulator Zakat</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/rekening" class="nav-link">
+                <p class="">Info Rekening Zakat</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/layananpembayaran" class="nav-link">
+                <p class="">Layanan Pembayaran</p>
+              </a>
+            </li>
+             <!-- <li class="nav-item">
+              <a href="https://baznas.go.id/e-proposal" class="nav-link">
+                <p class="">E-Proposal</p>
+              </a>
+            </li> -->
+            <li class="nav-item">
+              <a href="https://baznas.go.id/form-jemput-zakat" class="nav-link">
+                <p class="">Jemput Zakat</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://ppid.baznas.go.id/informasi-publik/berkala/rekomendasi-laz" class="nav-link">
+                <p class="">Layanan Rekomendasi</p>
+              </a>
+            </li>
+            <!-- <li class="nav-item">
+              <a href="https://baznas.go.id/e-pertimbangan" class="nav-link">
+                <p class="">E-Pertimbangan</p>
+              </a>
+            </li> -->
+          </ul>
+        </li>
+        <li class="nav-item has-treeview ">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-newspaper"></i>
+            <p class="text-uppercase font-weight-bold">
+              kabar
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          
+          <ul class="nav nav-treeview pl-4">
+            <li class="nav-item has-treeview ">
+              <a href="#" class="nav-link">
+                <p>Berita Program<i class="fas fa-angle-left right"></i></p>
+              </a>
+              <ul class="nav nav-treeview pl-4">
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/berita/program-kemanusiaan" class="nav-link">
+                    <p class="">Kemanusiaan</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/berita/program-kesehatan" class="nav-link">
+                    <p class="">Kesehatan</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/berita/program-pendidikan-dan-dakwah" class="nav-link">
+                    <p class="">Pendidikan dan Dakwah</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/berita/program-kebencanaan" class="nav-link">
+                    <p class="">Kebencanaan</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/berita/program-ekonomi-pedesaan" class="nav-link">
+                    <p class="">Ekonomi Pedesaan</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/berita/program-ekonomi-perkotaan" class="nav-link">
+                    <p class="">Ekonomi Perkotaan</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/berita/program-optimasi-dan-pemasaran-produk" class="nav-link">
+                    <p class="">Optimasi dan Pemasaran Produk</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/news-all" class="nav-link">
+                <p class="">Siaran Pers</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/kliping-berita" class="nav-link">
+                <p class="">Kliping</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/artikel-all" class="nav-link">
+                <p class="">Artikel</p>
+              </a>
+            </li>
+            <!-- <li class="nav-item">
+              <a href="https://baznas.go.id/event-all" class="nav-link">
+                <p class="">Event</p>
+              </a>
+            </li> -->
+            <li class="nav-item">
+              <a href="https://baznas.go.id/berita-all" class="nav-link">
+                <p class="">BAZNAS TV</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/berkah-zakat-all" class="nav-link">
+                <p class="">Nikmat Zakat</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/newsletter-all" class="nav-link">
+                <p class="">Newsletter</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item has-treeview ">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-book"></i>
+            <p class="text-uppercase font-weight-bold">
+              laporan
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview pl-4">
+            <li class="nav-item">
+              <a href="https://baznas.go.id/keuangan" class="nav-link">
+                <p class="">Keuangan</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/laporan-zakat-nasional" class="nav-link">
+                <p class="">LZN</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- <li class="nav-item has-treeview ">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-info-circle"></i>
+            <p class="text-uppercase font-weight-bold">
+              PPID
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview pl-4">
+          <li class="nav-item has-treeview ">
+              <a href="#" class="nav-link">
+
+                <p class="">Tentang PPID BAZNAS<i class="fas fa-angle-left right"></i></p>
+              </a>
+              <ul class="nav nav-treeview pl-4">
+              <li class="nav-item has-treeview ">
+              <a href="#" class="nav-link">
+
+                <p class="">Profil PPID<i class="fas fa-angle-left right"></i></p>
+              </a>
+              <ul class="nav nav-treeview pl-4">
+              <li class="nav-item">
+              <a href="https://baznas.go.id/profil-ppid" class="nav-link">
+                <p class="">Profil PPID</p>
+              </a>
+            </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/tugas-fungsi-ppid" class="nav-link">
+                    <p class="">Tugas dan Fungsi</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+              <a href="https://baznas.go.id/visi-misi-ppid-baznas" class="nav-link">
+                <p class="">Visi Misi</p>
+              </a>
+            </li>
+              </ul>
+            </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/berita-pendistribusian?category=scb" class="nav-link">
+                    <p class="">Struktur PPID</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            
+            
+            <li class="nav-item has-treeview ">
+              <a href="" class="nav-link tree">
+                <p class="tree">
+                  Layanan Informasi
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview pl-4">
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/permohonan-informasi" class="nav-link">
+                    <p class="">Form Permohonan Informasi</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/permohonan-kunjungan" class="nav-link">
+                    <p class="">Form Permohonan Kunjungan</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/hasil-penelitian" class="nav-link">
+                    <p class="">Form Hasil Penelitian</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/penilaian-layanan" class="nav-link">
+                    <p class="">Form Penilaian Layanan</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/pengajuan-keberatan" class="nav-link">
+                    <p class="">Form Pengajuan Keberatan</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item has-treeview ">
+              <a href="" class="nav-link tree">
+                <p class="tree">
+                  Informasi Publik
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview pl-4">
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/permohonan-informasi" class="nav-link">
+                    <p class="">Informasi Berkala</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/permohonan-kunjungan" class="nav-link">
+                    <p class="">Informasi Setiap Saat</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/penilaian-layanan" class="nav-link">
+                    <p class="">Informasi Serta Merta</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/pengajuan-keberatan" class="nav-link">
+                    <p class="">Informasi Dikecualikan</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item has-treeview ">
+              <a href="#" class="nav-link">
+
+                <p class="">Regulasi<i class="fas fa-angle-left right"></i></p>
+              </a>
+              <ul class="nav nav-treeview pl-4">
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/berita-pendistribusian?category=lbb" class="nav-link">
+                    <p class="">Regulasi Informasi Publik</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/berita-pendistribusian?category=scb" class="nav-link">
+                    <p class="">Regulasi Pengelolaan Zakat</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/berita-pendistribusian?category=scb" class="nav-link">
+                    <p class="">Regulasi BAZNAS</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/berita-pendistribusian?category=scb" class="nav-link">
+                    <p class="">Regulasi BAZNAS Prov, Kab./Kota</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/berita-pendistribusian?category=scb" class="nav-link">
+                    <p class="">Regulasi Lembaga Amil Zakat</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/berita-pendistribusian?category=scb" class="nav-link">
+                    <p class="">Regulasi Unit Pengumpul Zakat</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/berita-pendistribusian?category=scb" class="nav-link">
+                    <p class="">Regulasi Zakat dan Pajak</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/berita-pendistribusian?category=scb" class="nav-link">
+                    <p class="">Fatwa Majelis Ulama Indonesia</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/statistik-akses-informasi" class="nav-link">
+                <p class="">Statistik Akses Informasi Publik</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/laporan-layanan-informasi" class="nav-link">
+                <p class="">Laporan Layanan Informasi Publik</p>
+              </a>
+            </li>
+            <li class="nav-item has-treeview ">
+              <a href="#" class="nav-link">
+                <p class="">Standar Layanan<i class="fas fa-angle-left right"></i></p>
+              </a>
+              <ul class="nav nav-treeview pl-4">
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/berita-pendistribusian?category=lbb" class="nav-link">
+                    <p class="">Maklumat Layanan</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://baznas.go.id/berita-pendistribusian?category=scb" class="nav-link">
+                    <p class="">Waktu dan Biaya Layanan</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/faq" class="nav-link">
+                <p class="" title="Frequently Asked Question">FAQ PPID BAZNAS</p>
+              </a>
+            </li>
+          </ul>
+        </li> -->
+        <!-- <li class="nav-item">
+          <a href="https://baznas.go.id/pengaduan" class="nav-link">
+            <i class="nav-icon fas fa-balance-scale"></i>
+            <p class="text-uppercase font-weight-bold ">
+              pengaduan
+            </p>
+          </a>
+        </li> -->
+        <!-- <li class="nav-item">
+          <a href="baznas-daerah" class="nav-link">
+            <i class="nav-icon fas fa-sitemap"></i>
+            <p class="text-uppercase font-weight-bold ">
+              baznas daerah
+            </p>
+          </a>
+        </li> -->
+        <!-- <li class="nav-item has-treeview">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-landmark"></i>
+            <p class="text-uppercase font-weight-bold">
+              lembaga otonom
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview pl-4">
+            <li class="nav-item">
+              <a href="https://lsp.baznas.go.id/" class="nav-link" target="_blank">
+                <p>LSP</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://lemdiklat.baznas.go.id/" class="nav-link" target="_blank">
+                <p>Lemdiklat</p>
+              </a>
+            </li>
+          </ul>
+        </li> -->
+        <li class="nav-item">
+          <a href="https://ppid.baznas.go.id/" class="nav-link">
+            <i class="nav-icon fas fa-info-circle"></i>
+            <p class="text-uppercase font-weight-bold ">
+              PPID
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://baznas.go.id/pustaka" class="nav-link">
+            <i class="nav-icon fas fa-book-reader"></i>
+            <p class="text-uppercase font-weight-bold ">
+              pustaka
+            </p>
+          </a>
+        </li>
+
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-landmark"></i>
+            <p class="text-uppercase font-weight-bold">
+              baznas daerah
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview pl-4">
+            <li class="nav-item">
+              <a href="https://baznas.go.id/baznas-daerah" class="nav-link" target="_blank">
+                <p>Website BAZNAS Daerah</p>
+              </a>
+            </li>
+            <!-- <li class="nav-item">
+              <a href="https://lemdiklat.baznas.go.id/" class="nav-link" target="_blank">
+                <p>Pertimbangan</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://lemdiklat.baznas.go.id/" class="nav-link" target="_blank">
+                <p>BAZNAS Award</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://lemdiklat.baznas.go.id/" class="nav-link" target="_blank">
+                <p>Pertimbangan</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://lemdiklat.baznas.go.id/" class="nav-link" target="_blank">
+                <p>Rakornas/Rakernas</p>
+              </a>
+            </li> -->
+          </ul>
+        </li>
+
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-network-wired"></i>
+            <p class="text-uppercase font-weight-bold">
+              jaringan
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview pl-4">
+            <li class="nav-item">
+              <a href="https://baznas.go.id/lembaga-amil-zakat" class="nav-link">
+                <p>Lembaga Amil Zakat</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/lembaga-islam" class="nav-link">
+                <p>Lembaga Islam</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://baznas.go.id/lembaga-pendidikan" class="nav-link">
+                <p>Lembaga Pendidikan</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a href="https://baznas.go.id/kontak-baznas" class="nav-link">
+            <i class="nav-icon fas fa-phone"></i>
+            <p class="text-uppercase font-weight-bold ">
+              Kontak Baznas
+            </p>
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+    <!-- /.sidebar-menu -->
+  </div>
+  <!-- /.sidebar -->
+</aside>
+      <!-- /.right sidebar -->
+    </div>
+  </div>
+  <!-- script -->
+  <!-- <script src=""></script> -->
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script> -->
+  <!-- /.script -->
+</body>
+</html>
